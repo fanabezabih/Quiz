@@ -10,21 +10,15 @@
 
 
 // Process
-//  Calculate total by summing (quantity * price) for each item
+//  Create a class and constructor with orderId,items that includes name,quantity and price, and status as a parameter
+// Create a method to calculate order amount
+// Calculate total by summing (quantity * price) for each item
 //  Simulate payment with a 2-second delay
 //  On payment, set status to "paid" and print success
 
 // Output
 //     Total order amount
 //     Status updated to "paid" and success message printed
-
-
-
-
-
-
-
-
 
 
 class CustomerOrder {
@@ -57,33 +51,19 @@ order.processPayment();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //2. Create a TeamMember class that takes name, role, and an array of tasks (each task is an object with title and completed boolean). Write a prototype method completeTask(taskTitle) that marks a task as completed. Write another method checkProgress() that returns a Promise resolving to "All tasks completed!" or rejecting with "Pending tasks remaining" based on the state of the tasks array.
 
 //Pseudocode
 // Input
 // name,role, an array of tasks 
+
 //Process
-//Creating a class TeamMember with the properties of name,role, and an array of tasks
+//Creating a class TeamMember and constructor with the properties of name,role, and an array of tasks
 //Create a prototype method to marks the task completed
 //Iterate through the tasks to check
 //Create another method to check progress according to the tasks status
 //Return a promise with resolve for the completed tasks and reject for remaining tasks
+
 //Output
 //the status of the tasks whether it is completed or not
 
@@ -129,6 +109,8 @@ member.checkProgress()
 
 
 //3. Build a Candidate class with properties: name, position, and interviews (array of objects with date, status). Add a method scheduleInterview(date) that pushes a new interview with status "pending". Then write an async function sendConfirmation() that returns a Promise that resolves after 1 second with a message "Interview confirmed with [name]", and log the message.
+
+//Pseudocode
 //Input
 //name,position, and interviews with date and status 
 
@@ -140,7 +122,6 @@ member.checkProgress()
 //Print the message and return the promise 
 
 //Output
-
 //Confirmation of the interview
 
 
@@ -174,6 +155,7 @@ candidate.sendConfirmation();
  
 //4.Design a Course class with properties: title, instructor, and students (array of student objects with name and progress). Add a method updateProgress(studentName, value) that modifies the student’s progress. Create an async method generateCertificate(studentName) that returns a Promise resolving only if the progress is 100, otherwise reject with "Incomplete progress".
 
+//Pseudocode
 //Input
 //title, instructor, and students with name and progress
 
@@ -233,8 +215,10 @@ course.generateCertificate("Daniel")
 // Create a StockTracker class with a property watchlist (array of objects with symbol, threshold, currentPrice). Add a method updatePrice(symbol, newPrice) that updates the stock’s current price. Write an async method checkAlerts() that loops through the watchlist and returns a Promise resolving with a list of stocks where currentPrice >= threshold, or rejecting with "No alerts triggered".
 
 
+//Pseudocode
 //Input 
 //watchlist with symbol,threshold,currentprice objects
+
 //Process
 //Create a class StockTracker and constructor with watchlist properties
 //Create a method that updates price with a symbol and newprice parameters
